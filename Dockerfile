@@ -5,6 +5,6 @@ RUN apt-get update && \
     apt-get clean
 
 EXPOSE 49
-ENV DEBUGLEVEL=32
+ENV DEBUGLEVEL=8
 
 ENTRYPOINT /usr/sbin/tac_plus -G -t -d ${DEBUGLEVEL} -C /etc/tacacs+/tac_plus.conf
